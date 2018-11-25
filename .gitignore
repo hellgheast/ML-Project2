@@ -1,2 +1,2 @@
-data/*
-!data/.gitkeep
+*.h5
+.ipynb_checkpoints/*
