@@ -42,7 +42,9 @@ def load_test_set():
 
     files = os.listdir(test_path)
     print("Loading " + str(len(files)) + " images")
-    imgs = [load_image_rgb(test_path + files[i] + "/" + files[i] + ".png") for i in range(len(files))]
+    imgs = []
+    for i in range(len(files)):
+        imgs.append(load_image_rgb(test_path + "test_" + str(i+1) + "/test_" + str(i+1) + ".png"))
 
     return imgs
 
